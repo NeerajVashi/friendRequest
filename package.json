@@ -1,0 +1,54 @@
+{
+  "name": "facebook-friends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node server.js",
+    "unit": "nodemon --exec mocha --timeout 15000 --require babel-core/register --require babel-polyfill ./Test/unitTest.js ",
+    "dev1": "nodemon --exec mocha --require babel-core/register --require babel-polyfill ./rough/mochafile.js",
+    "int": "nodemon --exec mocha --timeout 15000 --require babel-core/register --require babel-polyfill ./Test/integrationTest.js",
+    "mig": "babel-node ./migrationScript/friends.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeerajVashi/facebook-friends.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeerajVashi/facebook-friends/issues"
+  },
+  "homepage": "https://github.com/NeerajVashi/facebook-friends#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "fetch": "^1.1.0",
+    "mocha": "^6.2.0",
+    "mongoose": "^5.6.1",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.19.1",
+    "nyc": "^14.1.1",
+    "request": "^2.88.0",
+    "supertest": "^4.0.2",
+    "validator": "^11.0.0",
+    "winston": "^3.2.1"
+  }
+}
